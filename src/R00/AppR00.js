@@ -1,13 +1,13 @@
 //import logo from './logo.svg';
 import React from 'react';
-import './App.css';
-import ImportComponent from './R00/R003_ImportComponent';
-import LifecycleEx from './R00/R004_LifecycleEx';
-import LifecycleEx2 from './R00/R005_LifecycleEx';
-import LifecycleEx3 from './R00/R006_LifecycleEx';
-import LifecycleEx4 from './R00/R007_LifecycleEx';
-import LifecycleEx5 from './R00/R008_LifecycleEx';
-import Es6 from './R00/R009_Es6';
+import './../App.css';
+import ImportComponent from './R003_ImportComponent';
+import LifecycleEx from './R004_LifecycleEx';
+import LifecycleEx2 from './R005_LifecycleEx';
+import LifecycleEx3 from './R006_LifecycleEx';
+import LifecycleEx4 from './R007_LifecycleEx';
+import LifecycleEx5 from './R008_LifecycleEx';
+import Es6 from './R009_Es6';
 
 // function App() {
 //   return (
@@ -31,12 +31,12 @@ import Es6 from './R00/R009_Es6';
 // }
 
 // 함수형 컴포넌트 App 정의
-function App() {
+function AppR00() {
   // 컴포넌트가 화면에 렌더링 할 JSX 반환
   // JSX 내부에서 HTML과 유사한 코드를 사용하여 UI 구성 가능
   return (  
     <div className="App">
-      <h1>Strat React!</h1>
+      <h1>AppR00</h1>
       <p>This is a simple React app.</p>
       <ImportComponent></ImportComponent>
       <LifecycleEx></LifecycleEx>
@@ -56,4 +56,4 @@ function App() {
 }
 
 // App 컴포넌트 내보내기
-export default App;
+export default AppR00;

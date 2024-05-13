@@ -1,7 +1,13 @@
 //import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-import ImportComponent from './R003_ImportComponent';
+import ImportComponent from './R00/R003_ImportComponent';
+import LifecycleEx from './R00/R004_LifecycleEx';
+import LifecycleEx2 from './R00/R005_LifecycleEx';
+import LifecycleEx3 from './R00/R006_LifecycleEx';
+import LifecycleEx4 from './R00/R007_LifecycleEx';
+import LifecycleEx5 from './R00/R008_LifecycleEx';
+
 
 // function App() {
 //   return (
@@ -33,6 +39,17 @@ function App() {
       <h1>Strat React!</h1>
       <p>This is a simple React app.</p>
       <ImportComponent></ImportComponent>
+      <LifecycleEx></LifecycleEx>
+      <LifecycleEx2></LifecycleEx2>
+      <LifecycleEx3
+        prop_value = '[6] From App.js'
+      />
+      <LifecycleEx4
+        prop_value = '[7] From App.js'
+      />
+      <LifecycleEx5
+        prop_value = '[8] From App.js'
+      />
     </div>
   );
 }

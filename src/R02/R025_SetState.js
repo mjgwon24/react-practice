@@ -9,7 +9,11 @@ export default class R025_SetState extends Component {
         };
     }
 
-    StateChange = 
+    // state 변경
+    StateChange = (flag) => {
+        if(flag == 'direct') this.state.StateString = true;
+        if(flag == 'setState') this.setState({StateString: true});
+    }
 
 
     // 2. render
@@ -18,8 +22,8 @@ export default class R025_SetState extends Component {
             <div>
                 <h2>R025_SetState</h2>
                 <p>StateString : {this.state.StateString.toString()}</p>
-                <button id='btnChangeState'>state직접변경</button>
-                <button id='btnChangeSetState'>setState사용</button>
+                <button id='btnChangeState' onClick={(e) => this.StateChange('direct', e)}>state직접변경</button>
+                <button id='btnChangeSetState' onClick={(e) => this.StateChange('setState', e)}>setState사용</button>
             </div>
         )
     }
